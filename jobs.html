@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>A family-owned Ethiopian restaurant Jobs</title>
+    <link rel="stylesheet" href="family-style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="wrapper">
+    <header>
+    <h1><a href="jobs.html">A family-owned Ethiopian restaurant Jobs</a></h1>
+    </header>       
+    <nav>
+        <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="menu.html">Menu</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="about.html">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="contact.html">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="gallery.html">Gallery</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="jobs.html">Jobs</a>
+   </nav>
+    <main>
+    <h2>Apply for a Job</h2>
+    
+    <form action="submit.php" method="POST">
+        
+        <label>Full Name:</label>
+        <input type="text" name="fullname" required>
+    <br>    
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+    <br>    
+
+        <label>Phone Number:</label>
+        <input type="tel" name="phone" required>
+    <br>       
+
+        <label>Position Applying For:</label>
+        <select name="position">
+            <option>Executive Chef</option>
+            <option>Cook</option>
+            <option>Dishwasher</option>
+        </select>
+    <br>    
+        <label>Upload Resume:</label>
+        <input type="file" name="resume">
+    <br>    
+
+        <label>Cover Letter:</label>
+        <textarea name="coverletter"></textarea>
+    <br>    
+
+        <button type="submit">Submit Application</button>
+    </form>
+    <br>
+<footer>   
+ <p>&copy; <small><i>Copyright &copy; 2026 A family-owned Ethiopian restaurant <br> <a href="mailto:hannah@abebe.com"> Email us: hannah@abebe.com</a></i></small></p>
+</footer>
+</main>
+</div>
+</body>
+</html>

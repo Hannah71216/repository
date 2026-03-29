@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>A family-owned Ethiopian restaurant Gallery</title>
+    <link rel="stylesheet" href="family-style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="wrapper">
+    <header>
+    <h1><a href="gallery.html">A family-owned Ethiopian restaurant Gallery</a></h1>
+    </header>       
+    <nav>
+        <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="menu.html">Menu</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="about.html">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="contact.html">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="gallery.html">Gallery</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="jobs.html">Jobs</a>
+   </nav>
+<style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        h1 {
+            padding: 20px;
+        }
+
+        .gallery {
+            display: flexbox;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+</style>        
+
+<main>
+<div id = "homehero"></div>
+<img src="Injera.jpg.png" width="300"heigh="200" alt="Ingera"></img>
+<img src="Injera2.jpg.png"width="300"heigh="200" alt="Ingera"></img>
+<img src="Injera3.jpg.png"width="300"heigh="200" alt="Ingera"></img>
+<img src="Injera4.jpg.png"width="300"heigh="200" alt="Ingera"></img>
+<img src="Injera5.jpg.png"width="300"heigh="200" alt="Ingera"></img>
+<img src="Injera6.jpg.png" width="300"heigh="200" alt="Ingera"></img>
+<img src="Injera7.jpg.png" width="300"heigh="200" alt="Ingera"></img>
+<img src="Injera8.jpg.png" width="300"heigh="200" alt="Ingera"></img>
+<img src="Injera9.jpg.png" width="300"heigh="200" alt="Ingera"></img>
+<footer>
+<p>&copy; <small><i>Copyright &copy; 2026 A family-owned Ethiopian restaurant <br> <a href="mailto:hannah@abebe.com"> Email us: hannah@abebe.com</a></i></small></p>
+</footer>
+</main>
+</div>
+</body>
+</html>

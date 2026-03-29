@@ -1,0 +1,158 @@
+*{margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+body {background-color:lightyellow;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color:#333;
+}
+#wrapper { 
+          background-color:lightgreen;
+	         padding:0;
+           margin-left: auto;
+           margin-right: auto;
+           width: 80%;
+          min-width: 900px;
+		       max-width: 1280px;
+		       box-shadow: 3px 3px 3px #676767;
+}
+.float-left {
+            float: left;
+             padding-right: 2em;
+             padding-bottom: 2e		    
+
+/* ================================
+  /* Header & Navigation
+   ================================ */
+
+header {
+    background-color: green;
+    color:green;
+    text-align: center;
+    padding: 20px;
+}
+.main-nav  {
+    list-style: none;
+    display: flex ;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    background-color:green;
+
+}
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: flexbox;
+}    
+nav a { text-decoration: none; }
+}
+#homehero { height: 300px;
+            background-image: url("Injera.jpg.png");
+	      background-repeat: no-repeat;
+	      background-size: 100% 100%;
+} 
+       
+/* ================================
+   Mobile Navigation
+   ================================ */
+
+@media (max-width: 768px) {
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+}
+
+    .main-nav li {
+        margin: 5px 0;
+    }
+}
+/* 1. Mobile Styles (Default) */
+.main-nav ul {
+    display: flex;
+    flex-direction: column; /* Stacked for touch-friendly mobile */
+    align-items: center;
+    gap: 15px;
+}
+
+/* 2. Desktop Styles (The Upgrade) */
+@media (min-width: 769px) {
+    .main-nav ul {
+        flex-direction: row; /* Switch to horizontal */
+        justify-content: space-between;
+        gap: 20px;
+    }
+}
+
+/* ================================
+   Main Content Layout
+   ================================ */
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* ================================
+   Image Styling (CSS Controlled)
+   ================================ */
+
+.menu-image {
+    max-width: 400px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+}
+img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    opacity: 0.95;
+}
+.gallery img {
+  width: calc(25% - 10px);  /* 4 images per row */
+  height: auto;
+  border-radius: 6px;
+}
+   
+/* ================================
+   Aside Section
+   ================================ */
+
+aside {
+    background-color: #eee;
+    padding: 15px;
+    border-left: 5px solid #8b0000;
+}
+
+/* ================================
+   Footer
+   ================================ */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* ================================
+   Simple Animation
+   ================================ */
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+section {
+    animation: fadeIn 1s ease-in;
+}
